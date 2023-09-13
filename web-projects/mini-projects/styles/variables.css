@@ -1,0 +1,15 @@
+:root {
+    --container-width: 100%;
+    --full-height: 100vh;
+    --flex: flex;
+    --red-border: 1px solid green;
+    --gray-border: 1px solid #e3e3e3;
+    --gray-alt-border: 1px solid #ced4da;
+    --bg-green: #08784f;
+    --bg-dark-green: #08784f;
+
+    /* Breakpoints */
+    --tablet-width: 750px;
+    --md-computer-width: 970px;
+    --lg-computer-width: 1170px
+}
