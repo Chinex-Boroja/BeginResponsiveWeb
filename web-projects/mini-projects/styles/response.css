@@ -1,0 +1,24 @@
+@media (min-width: 300px) and (max-width: 768px) {
+    .form-wrapper {
+        width: var(--container-width);
+        padding: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: var(--tablet-width);
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: var(--md-computer-width);
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: var(--lg-computer-width);
+    }
+}

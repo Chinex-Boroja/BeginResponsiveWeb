@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
-    <link href="assets/styles/index.css" rel="stylesheet">
+    <link href="assets/styles/index.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -17,6 +17,42 @@
     </header>
     <main class="main">
       <h1>Home Page</h1>
+      <article>
+        <section class="sub-section">
+          <h2>HTML form</h2>
+          <p class="animate">
+            In HTML, "form" elements are used to collect user input. The action
+            attribute specifies the URL where the form data will be sent when
+            the form is submitted.When you see action="#" in a form element, it
+            means that the form is set to submit the data to the same URL it's
+            currently on. In other words, when the form is submitted, it will
+            send the data back to the current page.
+          </p>
+        </section>
+        <section class="sub-section">
+          <h2>Action #</h2>
+          <p>
+            However, using action="#" is typically considered a placeholder or a
+            workaround. It's often used when you're using JavaScript to handle
+            form submissions and you want to prevent the page from refreshing.
+            For example, you might have JavaScript code that intercepts the form
+            submission event, processes the data using AJAX, and updates the
+            page dynamically without a full page refresh.
+          </p>
+        </section>
+      </article>
+      <h2>Grid Layout => Grid Columns</h2>
+      <section class="grid-container">
+        <div class="grid-cell">One</div>
+        <div class="grid-cell">Two</div>
+        <div class="grid-cell">Three</div>
+      </section>
+      <h2>Grid Layout => Grid Columns</h2>
+      <section class="flex-container">
+        <div class="flex-cell">One</div>
+        <div class="flex-cell">Two</div>
+        <div class="flex-cell">Three</div>
+      </section>
     </main>
   </body>
 </html>

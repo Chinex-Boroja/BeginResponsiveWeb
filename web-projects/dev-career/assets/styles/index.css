@@ -1,17 +1,32 @@
+:root {
+    --color-1: gray;
+    --bg-color: #afafaf;
+    --black-2: black;
+    --border-color: #afafaf;
+}
+
 html, body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 0;
     margin: 0;
 }
 
+h1, h2 {
+    padding: 0;
+}
+
 h1 {
     font-size: 20px;
     text-decoration: underline;
-    padding: 0 10px;
+    padding: 10px 0;
+}
+
+h2 {
+    font-size: 18px;
 }
 
 header {
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #afafaf;
     padding: 20px;
 }
 
@@ -19,11 +34,61 @@ nav a {
     margin: 0 10px;
 }
 
-.nav, .main {
-    max-width: 1250;
+.nav, .main, .footer {
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-.main {
+.main, .footer {
     padding: 0 20px;
+    max-width: 1280px;
+}
+
+.sub-section p {
+    color: var(--color-1);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.flex-container {
+    display: flex;
+    gap: 15px;
+}
+
+.flex-cell {
+    flex: 1;
+}
+
+.grid-cell, .flex-cell {
+    height: 200px;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+}
+.animate {
+    animation-name: slidein;
+    animation-duration: 3s;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }   
+    
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
 }
